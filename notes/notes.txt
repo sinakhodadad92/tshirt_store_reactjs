@@ -1,0 +1,43 @@
+caggle.it 
+
+####################### Python Environment
+
+1. People on mac are only need to write python3 on windows they write python (also pip3 | pip).
+2. pipenv 2020.6.2 ---> for virtual environment
+    1. pip3 install pipenv
+    2. https://pypi.org/project/pipenv
+    3. pipenv shell (activate the env with pipfile)
+    4. pip3 freeze
+    5. pipenv install ......
+
+####################### Django Installation
+1. Django V 3.0.8
+    1. pipenv install Django==3.0.8
+    2. 'django-admin' : it explains the basic commands like help
+    3. django-admin startproject ecom
+    4. 'python manage.py runserver'
+2. migrations through 'manage.py' file
+3. python manage.py makemigrations
+4. python manage.py migrate
+
+####################### Cross Origin Requests
+1. django-cors-headers 
+    https://github.com/adamchainz/django-cors-headers,
+    needed when we send multiple requests from different resources, here for example we send requests from postman and react, so it is needed here.
+2. Middleware
+    when a request wants to hit our web application, sme processes should be done on ti, for example if it is authenticated. So here layers are defined for this purpose.
+3. CORS_ORIGIN_ALLOW_ALL
+4. 'rest_framework' 
+    drops json files
+5. 'rest_framework.auth'
+    for custom signups not fjango sign up ??????
+6. django-admin startapp name_application
+
+####################### Setting up API structure
+1. django-admin startapp api
+    1. cd/api
+    2. django-admin startapp category | order | payment | product | user
+    3. add api into the setting.py\installed app
+2. admin.py: connects app to the admin panel 
+
+
