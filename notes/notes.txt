@@ -39,7 +39,18 @@ caggle.it
     2. django-admin startapp category | order | payment | product | user
     3. add api into the setting.py\installed app
 2. admin.py: connects app to the admin panel 
+3. python manage.py createsuperuser | sinahk, admin
+4. for app inside app -> add in installed apps -> api.category
 
-rrrr
-eeweewwewe
+ ####################### 04-02 Serialize the data from DB in Django
+1. django-rest-framework.com/api-guide/serializers ------- study later
+2. after creating models def __str__ in order that names return truly on admin dashboard
+3. adding serializers.py
 
+ ####################### 04-03 Category API routing and views in Django
+ 1. django-rest-framework.com/api-guide/routers ------- study later
+ 2. create serializer at category/serializers.py
+ 3. add routing in the main/app urls.py
+ 4. add routing from website ('rest_framework/router) into category/urls.py 
+
+  04 Testing with postman for category in Django
