@@ -40,4 +40,6 @@ caggle.it
     3. add api into the setting.py\installed app
 2. admin.py: connects app to the admin panel 
 
+rrrr
+eeweewwewe
 
