@@ -57,3 +57,7 @@ caggle.it
 1. ModelhyperlinkedSerializer -> with this in postman you can fetch the error
 
 ####################### 05-01 Add model for Product in Django
+1. we want here to add product it has foreign key to category
+2. create serializers and urls for it.
+3. bring up the model of category
+4. add application into installed_apps in settings file
