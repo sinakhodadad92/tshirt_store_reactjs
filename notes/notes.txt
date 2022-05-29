@@ -61,3 +61,80 @@ caggle.it
 2. create serializers and urls for it.
 3. bring up the model of category
 4. add application into installed_apps in settings file
+
+####################### 05-02 Image serialization and product views in django
+1. we need a full path to image url search it on stackoverflow. (django serializer imagefield to get full url)
+2. create class for product serializer
+    1. create class 'meta': model, fields
+    2. get entire image: serializers.Imagefield ....
+3. writing views, import serializer, model and answer the two questions :D 
+    1. import viewSets
+    2. import ProductSerializer
+    3. import Product
+    4. class ProductViewSet
+
+####################### 05-03 Setting up URL for products in Django
+
+### 6. Setting up custom user in admin 
+####################### 06-01 Custom user model in admin in Django
+####################### 06-02 Let's get some errors intentionally in Django
+####################### 06-03 Custom user serialization in Django 
+####################### 06-04 Generating the token in django
+####################### 06-05 Custom user signin in Django
+####################### 06-06 Permissions template for you in django
+####################### 06-07 fixing bugs and urls for user in django 
+####################### 06-08 classic super admin issue in django
+####################### 06-09 Detailed testing with postman for user Django
+
+### 7. Getting orders in django admin
+####################### 07-01 Creating model for orders in django
+####################### 07-02 Add serialization or orders
+####################### 07-03 Is the user authoticated in django
+####################### 07-04 Adding order in admin in django
+####################### 07-05 URL for order nd auth token in django
+
+### 8. Payment gateway in backend
+####################### 08-01 Understand the payment gateway 
+####################### 08-02 Generate braintree token for user in django
+####################### 08-03 Process the payment from backend in django
+####################### 08-04 Setup payment urls and debug in django 
+####################### 08-05 giving django some test
+
+### 9. Moving to frontend
+####################### 09-01 Bootstrap crash course
+####################### 09-02 React js crash course
+####################### 09-03 React router crash course
+
+### 10. React app for frontend
+####################### 10-01 Action plan for handeling frontend 
+####################### 10-02 Config for backend connection nd structure
+####################### 10-03 Application is up and running now
+####################### 10-04 Getting all products from backend
+####################### 10-05 Getting all tshirt name in frontend
+####################### 10-06 Image helper for card
+
+### 11. Reusable card component 
+####################### 11-01 Creating base component
+####################### 11-02 Bring in card component
+####################### 11-03 Pulling up text info from backend
+####################### 11-04 Conditional rendering of button
+
+### 12. Cart and auth helper
+####################### 12-01 Add item cart helper
+####################### 12-02 load and remove item from cart
+####################### 12-03 debugging remove from cart
+####################### 12-04 signin and signup helper files
+####################### 12-05 signout authenticated user
+####################### 12-06 Handeling private routes in react
+
+### 13. signin and signup components
+####################### 13-01 Load up the signup page in route
+####################### 13-02 Create signup from template 
+####################### 13-03 Handle signup of user
+####################### 13-04 Handling error and success message
+####################### 13-05 User dashboard and private route debugging
+####################### 13-06 Setup routes for signin
+####################### 13-07 Getting the form ready for signin
+
+
+
