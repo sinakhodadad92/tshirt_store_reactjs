@@ -123,6 +123,7 @@ caggle.it
 2. 
 
 ####################### 06-06 Permissions template for you in django
+1. django-rest-framework.org/api-guide/permissions/#allowany 
 ####################### 06-07 fixing bugs and urls for user in django 
 ####################### 06-08 classic super admin issue in django
 ####################### 06-09 Detailed testing with postman for user Django

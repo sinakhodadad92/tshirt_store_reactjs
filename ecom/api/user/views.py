@@ -62,3 +62,14 @@ def signin(request):
     except UserModel.DoesNotExist:
         return JsonResponse({'error': 'Invalid Email!'})
 
+class UserViewSet(viewsets.ModelViewSet):
+    permission_class_by_action = {'create': [AllowAny]}
+
+    queryset = CustomUser.objects.all().order_by('id')
+    serializer_class = UserSerializer
+
+    def get_permissions(self):
+        try:
+            return[permission() for permission in self.permission_class_by_action(self.action)]
+        except:
+            return[permission() for permission in self.permission_class_by_action()]
