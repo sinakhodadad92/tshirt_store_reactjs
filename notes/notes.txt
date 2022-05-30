@@ -74,13 +74,54 @@ caggle.it
     4. class ProductViewSet
 
 ####################### 05-03 Setting up URL for products in Django
+1. add routing in the main/app urls.py -> adding product url
+2. copy paste the category url into the product (create one if it doesnpt exist) 
+3. test
+    1. try to get 127.0.0.1:8000/api/product/
+    2. test with postman - copy lcodev rename it to ....
+    3. you can see we get complete image url
+        1. .../media/image/.... , we can have image, file, mp3, etc.
 
 ### 6. Setting up custom user in admin 
+
 ####################### 06-01 Custom user model in admin in Django
+1. we have already some kind of user registration which we saw for admin. we can inherite from that 
+2. the data here flows from backend to frontend and vice versa (signin, .....)
+3. challange here is having seperate login for admin and user otherwise we used same login for admin.
+4. checkout: docs.djangoproject.com/en/3.0/topics/auth/customizing/
+    1. Abstractuser -> inheritence -> register like admin
+
 ####################### 06-02 Let's get some errors intentionally in Django
+1. import customuser in admins.py
+2. add api.user to installed apps since we have new user configuration
+3. 
+    SystemCheckError: System check identified some issues:
+
+    ERRORS:
+    auth.User.groups: (fields.E304) Reverse accessor for 'User.groups' clashes with reverse accessor for 'CustomUser.groups'.
+        HINT: Add or change a related_name argument to the definition for 'User.groups' or 'CustomUser.groups'.
+    auth.User.user_permissions: (fields.E304) Reverse accessor for 'User.user_permissions' clashes with reverse accessor for 'CustomUser.user_permissions'.
+
+4. add AUTH_USER_MODEL in settings.py
+---------------------- This approach was wrong! 
+1. ** operator (Search in Google!)
+2. we serialize data to have it into the json format
+3. django-rest-framework.org/api-guide/serializers/#saving-instances
+
+
 ####################### 06-03 Custom user serialization in Django 
+1. create serializers.py for user
+2. import libraries (decorator in python study!)
+3. fields here have parameters which are inherited from User class
+4. copy create, update from 'django-rest-framework.org/api-guide/serializers/#saving-instances' and modify them
+
 ####################### 06-04 Generating the token in django
+1. random.SystemRandom().choice([chr(i) for i in range(97,123)] + [str(i) for i in range(10)]) for _ in range (length)
+
 ####################### 06-05 Custom user signin in Django
+1. regexr.com (for getting regular expression for different things)
+2. 
+
 ####################### 06-06 Permissions template for you in django
 ####################### 06-07 fixing bugs and urls for user in django 
 ####################### 06-08 classic super admin issue in django
