@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'api',
     'api.category',
-    'api.product'
+    'api.product',
+    'api.user'
 ]
 
 MIDDLEWARE = [
@@ -132,7 +133,7 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/' 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# AUTH_USER_MODEL = "user.CustomUser"
+AUTH_USER_MODEL = "user.CustomUser"
 
 # Rest Framework
 REST_FRAMEWORK = {
